@@ -1,0 +1,15 @@
+<h2>Questo sito ti dice che computer hai e in che lingua parli!!!</h2>
+<script> 
+  const vai = () => {
+    location.href = "/hello?name=" + document.getElementById("barra1").value + "&surname=" + document.getElementById("barra2").value + "&age=" + document.getElementById("barra3").value
+  }</script>
+<div class="input-group mb-3">
+  <input type="text" class="form-control" placeholder="Inserisci nome" aria-label="Inserisci nome" aria-describedby="button-addon2" id="barra1">
+<div class="input-group mb-3">
+  <input type="text" class="form-control" placeholder="Inserisci cognome" aria-label="Inserisci cognome" aria-describedby="button-addon2" id="barra2">
+<div class="input-group mb-3">
+  <input type="text" class="form-control" placeholder="Inserisci età" aria-label="Inserisci età" aria-describedby="button-addon2" id="barra3">
+<div class="input-group-append">
+  <button class="btn btn-outline-success" type="submit" id="button-addon2" onclick="vai();">Salutami</button>
+</div>
+</div>
